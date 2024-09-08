@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Sender</title>
+    <script src="email.js" defer></script>
+</head>
+<body>
+    <div class="header">
+        <span id="userEmail">Logged in as: <strong id="userEmailAddress"></strong></span><br>
+        <button class="logout-button" onclick="logout()">Logout</button>
+    </div>
+    <form id="emailForm">
+        <h2>Send an Email</h2>
+
+        <label for="to">To:</label>
+        <input type="email" id="to" name="to" required>
+
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Email</button>
+    </form>
+
+</body>
+</html>
